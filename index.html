@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>FAQ Accordion Card</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="card">
+    <picture>
+      <source media="(min-width: 900px)" srcset="images/illustration-woman-online-desktop.svg">
+      <img src="images/illustration-woman-online-mobile.svg" class="card__image">
+    </picture>
+    <img src="images/illustration-box-desktop.svg" class="card__box__image">
+    <div class="card__body">
+      <h1>FAQ</h1>
+      <div class="card__content">
+        <div class="card__content__header">
+          <p class="card__question">How many team members can I invite?</p>
+          <button class="card__icon">
+            <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__answer">
+          <p>
+            There is no limit on team members for the Premium plan.
+          </p>
+        </div>
+      </div>
+
+      <div class="card__content">
+        <div class="card__content__header">
+          <p class="card__question">What is the maximum file upload size?</p>
+          <button class="card__icon">
+            <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__answer">
+          <p>
+            No more than 2GB. All files in your account must fit your allocated storage space.
+          </p>
+        </div>
+      </div>
+
+      <div class="card__content">
+        <div class="card__content__header">
+          <p class="card__question">How do I reset my password?</p>
+          <button class="card__icon">
+            <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__answer">
+          <p>
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </p>
+        </div>
+      </div>
+
+      <div class="card__content">
+        <div class="card__content__header">
+          <p class="card__question">Can I cancel my subscription?</p>
+          <button class="card__icon">
+            <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__answer">
+          <p>
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </p>
+        </div>
+      </div>
+
+      <div class="card__content">
+        <div class="card__content__header">
+          <p class="card__question">Do you provide additional support?</p>
+          <button class="card__icon">
+            <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__answer">
+          <p>
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
