@@ -1,17 +1,18 @@
 let icon_button = document.getElementsByClassName("card__content__header");
-let icon_arrow = document.getElementsByClassName("card__icon");
 
 for(let i=0; i<icon_button.length;i++) {
-    icon_button[i].addEventListener("click", function() {
-        let isActive = this.classList.toggle("active");
+    icon_button[i].onclick = function() {
+        const setClasses = !this.classList.contains("active");
+        setClass(icon_button,"active","remove");
 
-        for(let j=0;j<icon_arrow.length;j++) {
-            if(isActive) {
-               icon_arrow[i].style.transform = "rotate(180deg)";
-            }
-            else {
-                icon_arrow[i].style.transform = "";
-            }
+        if(setClasses) {
+           this.classList.toggle("active");
         }
-    });
+    }
+}
+
+function setClass(elements, className, functionName) {
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].classList[functionName](className);
+    }
 }
