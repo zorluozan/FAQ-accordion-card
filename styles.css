@@ -37,7 +37,6 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        overflow: hidden;
         background-image: url("./images/illustration-woman-online-desktop.svg"),url("./images/bg-pattern-desktop.svg");
         background-repeat: no-repeat,no-repeat;
         background-position: -10% center, -571px -270px;
@@ -72,7 +71,7 @@
         position: absolute;
         top: 55%;
         left: 0;
-        transform: translateX(-30%) translateY(-50%);
+        transform: translateX(-40%) translateY(-50%);
         height: 150px;
     }
 }
@@ -86,6 +85,15 @@
 .card__body {
     display: flex;
     flex-direction: column;
+    height: 30rem;
+}
+
+@media (min-width: 900px) {
+    .card__body {
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+    }
 }
 
 h1 {
@@ -164,6 +172,10 @@ p.card__question:hover {
         color: #808080;
         display: none;
     }
+}
+
+.card__answer__text {
+    margin-top: 0;
 }
 
 .card__content__header.active {
