@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/zorluozan/FAQ-accordion-card
-- Live Site URL:
+- Live Site URL: https://zorluozan.github.io/FAQ-accordion-card/
 
 ## My process
 
